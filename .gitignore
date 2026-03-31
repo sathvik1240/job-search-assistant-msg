@@ -1,0 +1,25 @@
+# Environment (contains API keys - NEVER commit)
+.env
+service_account.json
+
+# Database
+*.db
+*.db-wal
+*.db-shm
+
+# Exports
+exports/
+
+# Node
+node_modules/
+dist/
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

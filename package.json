@@ -1,0 +1,12 @@
+{
+  "name": "job-search-assistant",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "dev": "echo 'Run backend and frontend separately — see README.md'",
+    "deploy:build": "npm run install:all && npm run build"
+  }
+}
