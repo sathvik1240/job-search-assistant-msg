@@ -6,29 +6,23 @@ echo   Job Search Assistant - Starting...
 echo  ====================================
 echo.
 
-:: Get the directory where this script lives
 cd /d "%~dp0"
 
-:: Start backend
 echo Starting backend...
 cd backend
-start "Backend" cmd /k "npm start"
+start "Backend" cmd /k "node server.js"
 cd ..
 
-:: Wait for backend to be ready
-echo Waiting for backend to start...
+echo Waiting for backend...
 timeout /t 3 /nobreak >nul
 
-:: Start frontend
 echo Starting frontend...
 cd frontend
-start "Frontend" cmd /k "npm run dev"
+start "Frontend" cmd /k "npx vite --port 3000"
 cd ..
 
-:: Wait for frontend to be ready
 timeout /t 4 /nobreak >nul
 
-:: Open browser
 echo Opening dashboard...
 start http://localhost:3000
 

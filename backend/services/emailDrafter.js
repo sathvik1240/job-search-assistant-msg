@@ -116,6 +116,7 @@ export async function draftEmailsForJob(job, contacts) {
       to_name: contact.name || "",
       contact_id: contact.id,
       job_id: job.id,
+      status: "draft",
     });
   }
 

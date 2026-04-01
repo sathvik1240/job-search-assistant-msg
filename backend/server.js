@@ -362,7 +362,7 @@ app.post("/api/jobs/:id/emails/draft", async (req, res) => {
   for (const email of emails) {
     email.job_id = jobId;
     const eid = insertEmail(email);
-    saved.push({ ...email, id: eid });
+    saved.push({ ...email, id: eid, status: "draft" });
   }
 
   logAction(jobId, "emails_drafted", `Drafted ${saved.length} emails`);
