@@ -145,7 +145,3 @@ job-search-assistant/
 | **Contact suggestions** | Analyzes the company + role, suggests 5 specific titles to search for on Apollo/LinkedIn |
 | **Email personalization** | Drafts hiring manager outreach with company-specific insights, matching the user's conversational tone |
 | **Deal-breaker nuance** | Scope prompt asks Claude to flag roles that require 5+ years even if keywords don't catch it |
-
-## Leena AI EIR
-
-Added manually via "Add Job" and scored through the identical rubric. Score breakdown and Claude's reasoning visible in the dashboard. See `SCORING_NOTE.md` for where it lands and why.
