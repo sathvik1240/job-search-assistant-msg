@@ -1,5 +1,5 @@
 # Job Search Assistant
-### Built by Sathvik Boorgu — Leena AI EIR Assignment
+### Built by Sathvik Boorgu
 
 An AI-powered job search tool that scrapes, scores, and acts on job opportunities. Built with Express.js + React, using Claude API for intelligent scoring and email personalization.
 
